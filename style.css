@@ -45,12 +45,10 @@ nav ul li:last-child a {
 
  section {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 40px;
 }
-.left {
-    margin-top: 10vh;
+.homeleft {
+    margin-top: 5vh;
     width: 60%;
 }
 
@@ -75,20 +73,112 @@ h5{
  }
  h2{
     color: #7B237E;
-    font-size: 5vw;
-    margin-top: 25px;
+    font-size: 4rem;
+    margin-top: 20px;
     margin-bottom: 10px;
+    line-height: 1.2;
  }
  span{
     color: white;
-    font-size: 5vw;
+    font-size: 4rem;
  }
-    p{
+.homeleft p{
         color: white;
-        margin-top: 0;
+        margin-top: 2px;
+        font-size: large;
+        line-height: 1.5;
     }
-.right img {
+.homeright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.homeright img {
     width: 40vw;
     height: auto;
     margin-top: 10vh;
+    box-shadow: 0 0 20px 15px rgb(155, 51, 164);
+}
+.btns{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+.btn1 {
+    background-color: rgb(243, 235, 243);
+    color: black;
+    border-radius: 80px;
+    padding: 12px 50px;
+    font-size: large;
+}
+.btn2 {
+    background-color: transparent;
+    color: white;
+    border: white solid 3px;
+    border-top: transparent;
+    border-radius: 80px;
+    padding: 12px 50px;
+    font-size: large;
+}
+.icons{
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+    padding-left: 40px;
+}
+.icons a i{
+    color: white;
+    font-size: 1.5vw;
+    transition: 0.3s;
+    padding: 3px;
+    border-radius: 60%;
+    color: #7B237E;
+    background-color: white;
+    padding: 10px;
+}
+
+#About{
+    margin-top: 50px;
+}
+
+.left{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left img{
+    height: auto;
+    margin-right: 20px;
+}
+.right {
+    width: 50%;
+    margin-top: 70px;
+}
+
+.right h2 {
+    font-size: 3vw;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.right p {
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+.right h2{
+    color: white;
+}
+.skillicons {
+    margin-top: 20px;
+    display: flex;
+    gap: 30px;
+}
+.skillicons i {
+    font-size: 2vw;
+    color: white;
+    background-color: #791D7F;
+    border-radius: 10px;
+    padding: 10px;
 }
