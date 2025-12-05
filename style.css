@@ -1,11 +1,13 @@
 body{
+    color: white;
     font-family: Arial, sans-serif;
     background-color: #14001B;
-    color: white;
-
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 nav{
+    height: 60px;
     background-color: #37123C;
     border-radius: 30px;
     width: 95%;
@@ -20,35 +22,41 @@ ul{
     list-style-type: none;
     justify-content: center;
     font-size: large;
-    
-}
-nav ul li a{
- color: white;
- text-decoration: none; 
- border-bottom: 2px solid transparent;
- padding-bottom: 6px;
- transition: 0.3s;  
 }
 
-nav ul li a:hover{
-    font-weight: bold;
-    border-bottom: 3px solid #7E2183;
-    border-radius: 5px;
-}
 nav ul li:last-child a {
+    color: white;
     background-color: #AF4AB5;
     padding: 10px 30px;
-    border-radius: 20px;    
+    text-decoration: none;
+    border-radius: 25px;    
     border: none;
-    
+}
+
+.btnbtn{
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+    text-decoration: none; 
+    padding-bottom: 8px;
+    transition: 0.3s;  
+}
+
+.btnbtn:hover{
+    font-weight: bold;
+    border-bottom: 3px solid #7E2183;
+    border-radius: 8px;
+
 }
 
  section {
     display: flex;
     padding: 0 40px;
+    
 }
 .homeleft {
-    margin-top: 5vh;
+    margin-top: 6vh;
     width: 60%;
 }
 
@@ -85,7 +93,7 @@ h5{
 .homeleft p{
         color: white;
         margin-top: 2px;
-        font-size: large;
+        font-size: medium;
         line-height: 1.5;
     }
 .homeright{
@@ -107,19 +115,34 @@ h5{
 .btn1 {
     background-color: rgb(243, 235, 243);
     color: black;
+    border: none;
     border-radius: 80px;
     padding: 12px 50px;
     font-size: large;
+    cursor: pointer;
 }
+
+.btn1:hover{
+   transform: translateY(-2px);
+   background-color: rgb(227, 205, 227);
+}
+
 .btn2 {
     background-color: transparent;
     color: white;
-    border: white solid 3px;
-    border-top: transparent;
+    border: white solid 1px;
     border-radius: 80px;
     padding: 12px 50px;
     font-size: large;
+    cursor: pointer;
 }
+
+.btn2:hover{
+    transform: translateY(-2px);
+    border: white solid 2px;
+    border-top: transparent;
+}
+
 .icons{
     margin-top: 40px;
     display: flex;
@@ -181,4 +204,253 @@ h5{
     background-color: #791D7F;
     border-radius: 10px;
     padding: 10px;
+}
+.purple {
+    border: none;
+    height: 3px;              
+    background-color: #dd2ae3; 
+    width: 90%;               
+    margin-top: 60px;        
+    border-radius: 5px; 
+    background: linear-gradient(
+        to right,
+        transparent 0%,      /* start main thin */
+        #ab1eaf 10%,        
+        #ab1eaf 90%,        
+        transparent 100%     /* end main thin */
+    );
+}
+/*services sec*/
+#services {
+    color: white;
+    text-align: center;
+}
+
+.heading{
+    text-align: center;
+    margin-top: 60px;
+}
+
+.heading .head{
+    color: white;
+}
+
+.heading .text{
+    color: white;
+    font-size: large;
+}
+
+.cardscontainer {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+#services .head {
+    font-size: 3em;   
+    margin-bottom: 15px;
+    color: white;
+}
+
+#services .text {
+    font-size: 1.3em;  
+    line-height: 1.6;  
+    color: white;
+}
+
+.cards{
+    background-color: #1f0526;
+    height: 45vh;
+    width: 18vw;
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    padding: 15px;
+}
+.cards i{
+    display: block; 
+    font-size: 5vw;
+    margin-top: 20px;
+    color: rgb(222, 171, 205);
+}
+.cards h3{
+    font-size: 2vw;
+    font-weight: bold;
+    color: white;
+    padding-top: 6vh;
+    margin-top: 15px;
+}
+
+.cards p{
+    font-size: 1.2vw;
+    line-height: 1.5;
+}
+
+.cards:hover{
+    background-color: #c04ac4;
+    transform: translateY(-15px);
+    box-shadow: 0 0 30px 10px rgb(155, 51, 164);
+}
+
+/*Projects section*/
+
+#projects{
+    gap: 30px;
+}
+
+#projects .procards{
+     background-color: #1f0526;
+    height: 70vh;
+    width: 25vw;
+    transition: all 0.4s ease;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-top: 20px;
+}  
+
+#projects .procards:hover{
+ box-shadow: 0 0 20px 10px rgb(123, 32, 168);   
+ transform: translateY(-15px);
+}
+
+.procards img{
+    height: 45vh;
+    width: 23vw;
+}
+
+.txtbtn{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.app{
+    margin-top: 15px;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.appbtn{
+    color: black;
+    display: inline-block;
+    background-color: rgb(230, 178, 230);
+    border-radius: 25px;
+    margin: 12px 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding: 15px;
+    font-size: medium;
+}
+
+.intro {
+    font-size: larger;
+    font-weight: normal;
+    text-align: start;
+    justify-content: center;
+    color: white;
+    padding-right: 12px;
+    padding-left: 12px;
+    margin: 5px;
+}
+
+.leftside{
+    margin-top: 90px;
+    width: 50%;
+}
+
+.leftside .contp{
+    font-size: 2vw;
+}
+
+.leftside h1, .contp{
+    padding-left: 40px;
+}
+
+.right{ 
+    flex: 1;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+    justify-content: center;
+}
+
+.form{
+    column-gap: 30px;
+    margin-bottom: 25px;
+}
+
+label{
+    display: block;
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+input{
+    color: white;
+    font-size: medium;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: transparent;
+    border-color: #db4de0;
+    border-width: 3px;
+}
+
+textarea{
+    padding: 20px;
+    padding-bottom: 70px;
+    border-radius: 10px;
+    width: 80%;
+    background-color: transparent;
+    border-color: #db4de0;
+    border-width: 3px;
+    font-size: medium;
+}
+
+input:hover{
+    border-color: #AF4AB5;
+    color: white;
+    font-size: medium;
+}
+
+textarea {
+    color: white;
+    font-size: medium;
+}
+
+textarea:hover{
+    border-color: #AF4AB5;
+}
+
+input::placeholder{
+    color: rgb(206, 175, 214);
+    font-size: medium;
+}
+textarea::placeholder{
+    color: rgb(206, 175, 214);
+    font-size: medium;
+}
+
+input, textarea{
+    row-gap: 20px;
+}
+
+.subbtn{
+    margin-top: 40px;
+    padding: 20px 50px;
+    border-radius: 20px;
+    color: white;
+    font-size: medium;
+    font-weight: bold;
+    background: rgb(122, 16, 122);
+}
+
+.subbtn:hover{
+    cursor: pointer;
+    background-color: #9f44a4;
+    transform: translateY(-3px);
 }
