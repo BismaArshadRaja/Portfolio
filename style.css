@@ -371,6 +371,22 @@ h5{
     margin: 5px;
 }
 
+.purplelast {
+    border: none;
+    height: 3px;              
+    background-color: #dd2ae3; 
+    width: 90%;               
+    margin-top: 90px;        
+    border-radius: 5px; 
+    background: linear-gradient(
+        to right,
+        transparent 0%,      /* start main thin */
+        #ab1eaf 10%,        
+        #ab1eaf 90%,        
+        transparent 100%     /* end main thin */
+    );
+}
+
 /*contact*/
 
 .leftside{
