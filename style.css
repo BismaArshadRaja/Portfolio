@@ -50,6 +50,8 @@ nav ul li:last-child a {
 
 }
 
+/*home section*/
+
  section {
     display: flex;
     padding: 0 40px;
@@ -160,6 +162,8 @@ h5{
     padding: 10px;
 }
 
+/*about section*/
+
 #About{
     margin-top: 50px;
 }
@@ -220,25 +224,28 @@ h5{
         transparent 100%     /* end main thin */
     );
 }
-/*services sec*/
+
+/*services section*/
+
 #services {
     color: white;
     text-align: center;
+    justify-content: center;
 }
 
-.heading{
-    text-align: center;
+.serheading {
     margin-top: 60px;
 }
 
-.heading .head{
+.serhead {
     color: white;
 }
 
-.heading .text{
+.sertext {
     color: white;
     font-size: large;
 }
+
 
 .cardscontainer {
     display: flex;
@@ -295,17 +302,24 @@ h5{
 
 /*Projects section*/
 
+.headings{
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
 #projects{
     gap: 30px;
+    margin-top: 0;
 }
 
 #projects .procards{
-     background-color: #1f0526;
-    height: 70vh;
+    background-color: #1f0526;
+    height: 73vh;
     width: 25vw;
     transition: all 0.4s ease;
     border-radius: 15px;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 15px;
     margin-top: 20px;
 }  
@@ -318,6 +332,7 @@ h5{
 .procards img{
     height: 45vh;
     width: 23vw;
+    padding: 5px 5px 15px 15px;
 }
 
 .txtbtn{
@@ -356,8 +371,10 @@ h5{
     margin: 5px;
 }
 
+/*contact*/
+
 .leftside{
-    margin-top: 90px;
+    margin-top: 110px;
     width: 50%;
 }
 
@@ -374,7 +391,7 @@ h5{
     width: 50%;
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 100px;
     justify-content: center;
 }
 
