@@ -428,7 +428,7 @@ h5{
     justify-content: center;
 }
 
-.form{
+.conform{
     column-gap: 30px;
     margin-bottom: 25px;
 }
@@ -489,7 +489,7 @@ input, textarea{
     row-gap: 20px;
 }
 
-.subbtn{
+.submbtn{
     margin-top: 40px;
     padding: 20px 50px;
     border-radius: 20px;
@@ -499,7 +499,7 @@ input, textarea{
     background: rgb(122, 16, 122);
 }
 
-.subbtn:hover{
+.submbtn:hover{
     cursor: pointer;
     background-color: #9f44a4;
     transform: translateY(-3px);
