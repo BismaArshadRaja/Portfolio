@@ -13,8 +13,9 @@
         <a href="#formfiller"><button id="open">Create<i class="fa-solid fa-circle-plus"></i></button></a>
         <button id="createbtn2">Fill Randomly</button>
         </div>
-        <table>                                 
-            <tr>
+       <table>
+    <thead>
+        <tr>
             <th>Sr.No</th>   
             <th>Name</th>
             <th>Email</th>
@@ -22,90 +23,83 @@
             <th>Age</th>
             <th>City</th>
             <th>Actions</th>
-            </tr>
-            <!--row1-->
-            <tbody>
+        </tr>
+    </thead>
+
+    <tbody id="tableBody">   <!-- only ONE tbody ✔ -->
+
+        <tr>
             <td>1</td>
             <td>Raja M Yaseen</td>
             <td>bismaarshadraja@gmail.com</td>  
             <td>03123456789</td>
             <td>70</td>
             <td>Jhelum</td>
-            <td>
-            <button id="blue"><i class="fa-regular fa-eye"></i></button>
-            <button id="yellow"><i class="fa-solid fa-pen-to-square"></i></button>
-            <button id="red"><i class="fa-solid fa-trash-can"></i></button>
+            <td class="triobtns">
+                <button class="blue view"><i class="fa-regular fa-eye"></i></button>
+                <button class="yellow edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="red delete"><i class="fa-solid fa-trash-can"></i></button>
             </td>
-            </tbody>
-            <!--row2-->
-             <tbody>
+        </tr>
+
+        <tr>
             <td>2</td>
             <td>Raja M Sarwar</td>
             <td>raja@gmail.com</td>  
             <td>03123456700</td>
             <td>75</td>
             <td>Gujrat</td>
-            <td>
-            <button id="blue"><i class="fa-regular fa-eye"></i></button>
-            <button id="yellow"><i class="fa-solid fa-pen-to-square"></i></button>
-            <button><i class="fa-solid fa-trash-can"></i></button>
+            <td class="triobtns">
+                <button class="blue view"><i class="fa-regular fa-eye"></i></button>
+                <button class="yellow edit"><i class="fa-solid fa-pen-to-square"></i></button>
+                <button class="red delete"><i class="fa-solid fa-trash-can"></i></button>
             </td>
-            </tbody>
-            <!--row3-->
-             <tbody>
+        </tr>
+
+        <tr>
             <td>3</td>
             <td>Raja M Amin</td>
             <td>aminraja@gmail.com</td>  
             <td>03123456701</td>
             <td>60</td>
             <td>Dubai</td>
-            <td>
-            <button id="blue"><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-pen-to-square"></i></button>
-            <button><i class="fa-solid fa-trash-can"></i></button>
+            <td class="triobtns">
+               <button class="blue view"><i class="fa-regular fa-eye"></i></button>
+               <button class="yellow edit"><i class="fa-solid fa-pen-to-square"></i></button>
+               <button class="red delete"><i class="fa-solid fa-trash-can"></i></button>
+
             </td>
-            </tbody>
-            <!--row4-->
-             <tbody>
-            <td>3</td>
-            <td>Raja M Naseem</td>
-            <td>naseemraja@gmail.com</td>  
-            <td>44123456701</td>
-            <td>50</td>
-            <td>London</td>
-            <td>
-            <button id="blue"><i class="fa-regular fa-eye"></i></button>
-            <button><i class="fa-solid fa-pen-to-square"></i></button>
-            <button><i class="fa-solid fa-trash-can"></i></button>
-            </td>
-            </tbody>
-        </table>
+        </tr>
+    </tbody>
+
+</table>
+
     </div>
 
     <!--create form-->
     <div id="formfiller">
             <h4>Fill the Forms <span><button id="close"><i class="fa-solid fa-xmark"></i></button></span></h4>
-            <div id="form">
+            <div class="form">
                 <label class="addform" for="name">Name<span>*</span>
                 </label>
                 <input class="addinput" type="text" placeholder="">
             </div>
-            <div id="form">
+            <div class="form">
                 <label class="addform" for="email">Email<span>*</span>
                 </label>
                 <input class="addinput" type="text" placeholder="">
             </div>
-            <div id="form">
+            <div class="form">
                 <label class="addform" for="phone">Phone<span>*</span>
                 </label>
                 <input class="addinput" type="number" placeholder="">
             </div>
-            <div id="form">
+            <div class="form">
                 <label class="addform" for="age">Age<span>*</span>
                 </label>
                 <input class="addinput" type="number" placeholder="">
             </div>
-            <div id="form">
+            <div class="form">
                 <label class="addform" for="city">City<span>*</span>
                 </label>
                 <input class="addinput" type="text" placeholder="">

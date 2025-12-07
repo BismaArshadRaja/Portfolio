@@ -564,18 +564,15 @@ tr, th, td{
     align-items: start;
 }
 
-th{
-    align-items: center;
-}
 
 tr{
-    text-align: left;
+    text-align: center;
 }
 
 
 #formfiller {
     display: none;  
-    height: 600px;  
+    height: 500px;  
     width: 650px;
     background-color: white;
     color: #70368b;
@@ -589,11 +586,6 @@ tr{
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 999;
-}
-
-#form { 
-    gap: 20px;      
-    padding: 2px;
 }
 
 /* Heading */
@@ -616,36 +608,46 @@ tr{
     cursor: pointer;
 }
 
-#form {
-    display: flex;
-    gap: 40px;
-    padding-right: 20px;
-    padding-left: 10px;
+.form {
+     display: flex;
+    gap: 50px;
+    margin: 3px;
+    width: 100%;   
+    align-items: center;
+}
+
+span{
+    color: #560d58;
+    font-size: 16px;
+    font-weight: bold;
+
 }
 
 .addform {
-    font-size: medium;
+    display: flex;
+    font-size: 16px;
     font-weight: bold;
     color: #ab1eaf;
-    margin: 2px;
+    margin-top: 20px;
     padding: 2px;
 }
 
 .addinput {
-    width: 100%;
+    width: 100%;             
+    padding: 10px 10px;
     border: none;
-    padding: 10px;
     border-bottom: 2px solid #7a0b7f;
     border-radius: 2px;
     outline: none;
-    font-size: medium;
+    font-size: 16px;
     margin-bottom: 20px;
     color: black; 
+   
 }
 
 .addinput::placeholder {
-    color: black; 
-    padding: 0;
+    font-size: medium;          
+    color: #7a0b7f;              
 }
 
 .addinput:focus {
@@ -670,4 +672,37 @@ tr{
     border-radius: 20px;
     font-size: medium;
     cursor: pointer;
+}
+
+.triobtns{
+      display: flex;  
+    gap: 10px;
+    text-align: center;
+}
+
+.blue{
+  font-size: 15px;
+  background-color: blue;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.yellow{
+   font-size: 15px;
+  background-color: yellow;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.red{
+  font-size: 15px;
+  background-color: red;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
