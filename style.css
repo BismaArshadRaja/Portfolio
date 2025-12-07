@@ -43,11 +43,28 @@ nav ul li:last-child a {
     transition: 0.3s;  
 }
 
+.btncurd{
+    color: white;
+    border: none;
+    background-color: transparent;
+    font-size: medium;
+    text-decoration: none; 
+    padding-bottom: 8px;
+    transition: 0.3s;  
+    cursor: pointer;
+}
+
 .btnbtn:hover{
     font-weight: bold;
     border-bottom: 3px solid #7E2183;
     border-radius: 8px;
+    cursor: pointer;
 
+}
+
+.btncurd:hover{
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /*home section*/
@@ -486,4 +503,171 @@ input, textarea{
     cursor: pointer;
     background-color: #9f44a4;
     transform: translateY(-3px);
+}
+
+
+/*curd.html*/
+
+
+/*table&front buttons*/
+
+#twobtns{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#open{
+    background-color: #7E2183;
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: large;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#open i{
+    margin: 5px;
+    font-size: large;
+}
+#createbtn2{
+    background-color: #7E2183;
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 10px;
+    cursor: pointer;
+}
+#createbtn2 i{
+    background-color: transparent;
+    margin-left: 8px;
+    font-size: large;
+}
+
+table{
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    
+}
+tr, th, td{
+    border: 1px solid #AF4AB5;
+    padding: 20px;
+    align-items: start;
+}
+
+th{
+    align-items: center;
+}
+
+tr{
+    text-align: left;
+}
+
+
+#formfiller {
+    display: none;  
+    height: 600px;  
+    width: 650px;
+    background-color: white;
+    color: #70368b;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+}
+
+#form { 
+    gap: 20px;      
+    padding: 2px;
+}
+
+/* Heading */
+#formfiller h4 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #70368b;
+    cursor: pointer;
+}
+
+#close{
+      display: flex;
+    border: none;
+    background: none;
+    font-size: 20px;
+    color: #70368b;
+    cursor: pointer;
+}
+
+#form {
+    display: flex;
+    gap: 40px;
+    padding-right: 20px;
+    padding-left: 10px;
+}
+
+.addform {
+    font-size: medium;
+    font-weight: bold;
+    color: #ab1eaf;
+    margin: 2px;
+    padding: 2px;
+}
+
+.addinput {
+    width: 100%;
+    border: none;
+    padding: 10px;
+    border-bottom: 2px solid #7a0b7f;
+    border-radius: 2px;
+    outline: none;
+    font-size: medium;
+    margin-bottom: 20px;
+    color: black; 
+}
+
+.addinput::placeholder {
+    color: black; 
+    padding: 0;
+}
+
+.addinput:focus {
+    color: black;
+}
+
+.addinput:hover {
+    color: inherit;
+    background-color: inherit;
+    border-color: inherit;
+}
+
+#sub{
+    margin-left: auto;
+}
+
+#subbtn {
+    background-color: #7E2183;
+    color: white;
+    padding: 14px 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: medium;
+    cursor: pointer;
 }
